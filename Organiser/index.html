@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="K. Kashchiev">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<h1>Agenda</h1>
+		<div id="mainInternal">
+			<div class="agenda mainInternalSections">
+				<div class="agendaItem1 agendaItems"></div>
+			</div>
+			<div class="calendar mainInternalSections">
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="calendarBody">
+					<div class="calendarTitle">
+						<h2></h2>
+					</div>
+				</div>
+				<div id="calendarYearContainer">
+					<h6 id="year"></h6>
+				</div>
+				
+			</div>
+			<div class="settings mainInternalSections">
+				<div id="visualSettings">
+					<div class="subSettingsL">
+						<p>Inner text size</p>
+						<p>Preset themes</p>
+						<p>Text color</p>
+						<p>Background Color</p>
+						<p>Clock format</p>
+						<p>30/60 minute dividers</p>
+					</div>
+					<div class="subSettingsR">
+						<select name="fontSize">
+							<option value="small" selected>Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<select name="themes">
+							<option class="themeOptions" value="dark" selected>Dark</option>
+							<option class="themeOptions" value="light">Light</option>
+							<option class="themeOptions" value="Custom">Custom</option>
+						</select>
+						<input class="colors textColor" type="color" value="#F45000">
+						<input class="colors bgColor" type="color">
+						<select name="clockFormat">
+							<option value="24" selected>24 <span class="clockFormatHrs">hrs</span></option>
+							<option value="12">12 <span class="clockFormatHrs">hrs</span></option>
+						</select>
+						<select name="minutes">
+							<option value="48" selected>30 min</option>
+							<option value="24">60 min</option>
+						</select>
+					</div>
+				</div>
+				<div id="behaviourSettings">
+					<div class="subSettingsL">
+						<p>Select alert audio</p>
+						<p>In app alerts</p>
+						<p>Vibration On/Off</p>
+						<p class="vibrationText">Vibration intensity</p>
+						<p class="vibrationText">Battery conservation
+							<span class="settingInfo">
+								<span class="innerInfo">
+									<span class="infoClose"></span>
+									<span class="innerInfoText">
+										Alert and/or vibration will be active for one minute every other minute.
+									</span>
+								</span>
+							</span>
+						</p>
+					</div>
+					<div class="subSettingsR">
+						<div class="arrowContainer arrowRContainer">
+							<div class="arrowR arrowSubContainer">
+								<div class="arrowR1 shapedButtons"></div>
+								<div class="arrowR2 shapedButtons"></div>
+							</div>
+							<div class="hiddenDiv">
+								<div class="arrowContainer arrowLContainer">
+									<div class="arrowL arrowSubContainer">
+										<div class="arrowL1 shapedButtons"></div>
+										<div class="arrowL2 shapedButtons"></div>
+									</div>
+								</div>
+								<div class="subSettingsL">
+									
+								</div>
+								<div class="subSettingsR">
+									
+								</div>
+								<!--<input id="uploadFile" type="file">-->
+							</div>
+						</div>
+						<div class="buttonContainer">
+							<div class="onOffSubBG onOffSubBG1"></div>
+							<div class="onOffSubBG onOffSubBG2"></div>
+							<div class="onOffSubBG onOffSubBG3"></div>
+							<div class="onOffButton1 onOffBG"></div>
+							<div class="onOffButton2 onOffBG"></div>
+							<div class="onOffButton3 onOffBG"></div>
+							<div class="innerButton"></div>
+						</div>
+						<div class="buttonContainer">
+							<div class="onOffSubBG onOffSubBG1"></div>
+							<div class="onOffSubBG onOffSubBG2"></div>
+							<div class="onOffSubBG onOffSubBG3"></div>
+							<div class="onOffButton1 onOffBG"></div>
+							<div class="onOffButton2 onOffBG"></div>
+							<div class="onOffButton3 onOffBG"></div>
+							<div class="innerButton"></div>
+						</div>
+						<select name="vibration">
+							<option value="light" selected>Light</option>
+							<option value="medium">Medium</option>
+							<option value="heavy">Heavy</option>
+						</select>
+						<div class="buttonContainer">
+							<div class="onOffSubBG onOffSubBG1"></div>
+							<div class="onOffSubBG onOffSubBG2"></div>
+							<div class="onOffSubBG onOffSubBG3"></div>
+							<div class="onOffButton1 onOffBG"></div>
+							<div class="onOffButton2 onOffBG"></div>
+							<div class="onOffButton3 onOffBG"></div>
+							<div class="innerButton"></div>
+						</div>
+					</div>
+				</div>
+				<div id="saveSettings">
+					<div class="subSettingsL">
+						<p>Auto load settings</p>
+						<p>Save settings</p>
+						<p>Load settings</p>
+						<p>Clear settings</p>
+					</div>
+					<div class="subSettingsR">
+						<div class="buttonContainer">
+							<div class="onOffSubBG onOffSubBG1"></div>
+							<div class="onOffSubBG onOffSubBG2"></div>
+							<div class="onOffSubBG onOffSubBG3"></div>
+							<div class="onOffButton1 onOffBG"></div>
+							<div class="onOffButton2 onOffBG"></div>
+							<div class="onOffButton3 onOffBG"></div>
+							<div class="innerButton"></div>
+						</div>
+						<div class="normalButtons saveButton">
+							<div class="normalButtonContainer">
+								<div class="saveLoadButtons1 shapedButtons"></div>
+								<div class="saveLoadButtons2 shapedButtons"></div>
+								<div class="saveLoadButtons3 shapedButtons"></div>
+							</div>
+						</div>
+						<div class="normalButtons loadButton">
+							<div class="normalButtonContainer">
+								<div class="saveLoadButtons1 shapedButtons"></div>
+								<div class="saveLoadButtons2 shapedButtons"></div>
+								<div class="saveLoadButtons3 shapedButtons"></div>
+							</div>
+						</div>
+						<div class="normalButtons clearButton">
+							<div class="normalButtonContainer">
+								<div class="clearButton1 shapedButtons"></div>
+								<div class="clearButton2 shapedButtons"></div>
+								<div class="clearButton3 shapedButtons"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="agendaButton footerInternal">
+			<h2>Agenda</h2>
+		</div>
+		<div class="calendarButton footerInternal">
+			<h2>Calendar</h2>
+		</div>
+		<div class="settingsButton footerInternal">
+			<h2>Settings</h2>
+		</div>
+	</footer>
+	<script src="index.js"></script>
+</body>
+</html>

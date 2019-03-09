@@ -1938,7 +1938,7 @@ function drawLoop() {
 	decor.drawStakedCorpse(2750, 354, 2);
 	decor.drawStakedSkull(2500, 382, 2);
 	decor.animateStakedCorpse(2600, 354, 2);
-	decor.animateDrops(2680, 127, 127, 4);
+	decor.animateDrops(2680, 120, 120, 4);
 
 	context.save();
 	context.globalAlpha = text.opacity;
