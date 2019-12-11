@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	color: #E2E2E2;
+}
+
+html {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: 'Courgette', cursive;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .48);
+}
+
+header {
+	height: 7.5%;
+	display: flex;
+	background-color: rgba(0, 0, 0, .8);
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+h1 {
+	margin: auto;
+	padding: 4px 12px;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 1px;
+}
+
+nav {
+	width: 100%;
+	height: 4.5%;
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0 1px 3px 0px rgba(255, 255, 255, .4);
+}
+
+main {
+	height: 82%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+}
+
+.mainSections {
+	display: flex;
+	margin-top: 40px;
+	font-size: 1.2em;
+}
+
+.halfSection {
+	width: 72%;
+	padding: 2px 5px;
+	text-align: justify;
+	justify-content: center;
+	position: relative;
+	background-color: rgba(0, 0, 0, .65);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .7);
+	border-radius: 1px;
+}
+
+.wholeSection {
+	width: 100%;
+	grid-column: 1 / span 2;
+	padding: 0 20px 20px 20px;
+}
+
+.previewSection {
+	width: 202px;
+	height: 150px;
+	opacity: .9;
+	transition-duration: .3s;
+	background-color: red;
+}
+
+canvas {
+	width: 128px;
+	height: 128px;
+	background-image: url(../img/defaultFoodImages.png);
+	background-repeat: no-repeat;
+}
+
+.previewRecepiesName {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 3px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .65);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .7);
+}
+
+.siteInfo {
+	padding: 2px 5px;
+	text-align: justify;
+	background-color: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .7);
+	border-radius: 1px;
+}
+
+footer {
+	height: 6%;
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0 -1px 3px 0px rgba(255, 255, 255, .4);
+}

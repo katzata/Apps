@@ -1,0 +1,750 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	color: #E2E2E2;
+	border-radius: 1px;
+}
+
+html {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: 'Courgette', cursive;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .55);
+	overflow-x: hidden;
+}
+
+header {
+	height: 7%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .78);
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	position: relative;
+	user-select: none;
+}
+
+h1, h2, h3 {
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 1px;
+	user-select: none;
+}
+
+nav {
+	width: 100%;
+	height: 4%;
+	background-color: rgba(0, 0, 0, .78);
+	box-shadow: 0 1px 3px 0px rgba(255, 255, 255, .4);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.navItems {
+	position: absolute;
+}
+
+#signInContainer {
+	position: absolute;
+	left: 2%;
+	width: 68px;
+	height: 23px;
+	text-align: center;
+	margin: auto 0;
+	z-index: 3;
+}
+
+.signInExit {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 0%;
+	z-index: 0;
+}
+
+.signIn {
+	top: 0;
+	width: 68px;
+	height: 100%;
+	padding-top: 21px;
+	background-color: rgba(0, 0, 0, 0);
+	transition-duration: .18s;
+}
+
+.signInText {
+	position: absolute;
+	top: 1px;
+	left: 50%;
+	margin-left: -34px;
+}
+
+.signInForm {
+	display: flex;
+	flex-direction: column;
+	transition-duration: .18s;
+	opacity: 0;
+}
+
+.signUpHide {
+	transition-duration: .18s;
+}
+
+.formParts {
+	height: 0px;
+}
+
+.formTop, .formMiddle, .formBottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition-duration: .18s;
+}
+
+.formTop {
+	height: 0px;
+}
+
+.formMiddle {
+	height: 0px;
+}
+
+.formBottom {
+	height: 0px;
+}
+
+.inputImgContainer {
+	margin-top: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.inputImg {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.inputImgUser {
+	background-image: url(../img/user.svg);
+}
+
+.inputImgPassword, .inputImgPassword2 {
+	background-image: url(../img/pass.svg);
+}
+
+.inputImgEmail1, .inputImgEmail2 {
+	background-image: url(../img/at.svg);
+}
+
+.signInInput {
+	width: 125px;
+	height: 20px;
+	border-width: 0;
+	background-color: rgba(0, 0, 0, .5);
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, .3);
+}
+
+.signInInput:focus {
+	outline: none;
+}
+
+.checkBoxContainer1 {
+	width: 115px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 1px;
+	background-color: rgba(0, 0, 0, .4);
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+
+
+.checkBoxContainer2 {
+	width: 90px;
+	margin-right: 9px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 1px;
+	background-color: rgba(0, 0, 0, .4);
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+
+.checkBox1, .checkBox2 {
+	width: 15px;
+	height: 15px;
+}
+
+.checkBox1 {
+	margin-right: 5px;
+}
+
+.checkBoxText2 {
+	width: 90px;
+	margin-top: 5px;
+	font-size: .9em;
+}
+
+.submit {
+	width: 58px;
+	height: 38px;
+	padding: 0 0 2px 0;
+	border-width: 0;
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, .3);
+	font-family: 'Courgette', cursive;
+	font-size: 1em;
+	text-align: center;
+	transition-duration: .18s;
+}
+
+.submit:focus {
+	outline: none;
+}
+
+.submit:active {
+	box-shadow: 0 0 4px 2px rgba(255, 255, 255, .2);
+}
+
+.searchForm {
+	position: relative;
+	width: 26%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchFormExit {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+#searchText {
+	width: 46px;
+	text-align: center;
+	transition-duration: .18s;
+}
+
+#searchField {
+	position: absolute;
+	left: 0;
+	width: 85%;
+	height: 100%;
+	padding-left: 1px;
+	transition-duration: .18s;
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0;
+	z-index: -1;
+}
+
+#searchField:focus {
+	outline: none;
+}
+
+#searchField:hover {
+	cursor: default;
+}
+
+.searchFiltersContainer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 26px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, .89);
+	box-shadow: 0 0 3px 1px rgba(255, 255, 255, .3);
+	transition-duration: .18s;
+	z-index: -1;
+	opacity: 0;
+}
+
+.searchFilters {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 0 10px 0;
+	text-align: center;
+}
+
+.filtersText {
+	position: absolute;
+	left: 50%;
+	top: 3px;
+	margin-left: -22px;
+	transition-duration: .18s;
+	z-index: 1;
+}
+
+.arrowContainer {
+	position: absolute;
+	left: 50%;
+	bottom: 2px;
+	margin-left: -18px;
+	width: 36px;
+	height: 20px;
+	transition-duration: .18s;
+	opacity: 0;
+}
+
+.arrows {
+	position: absolute;
+	top: -3px;
+	width: 3px;
+	height: 121%;
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: 0 0 3px 1px rgba(255, 255, 255, .3);
+}
+
+.arrowL {
+	left: 7px;
+	transform: rotate(-59deg);
+}
+
+.arrowR {
+	right: 7px;
+	transform: rotate(59deg);
+}
+
+.searchOptionsContainer {
+	flex-direction: column;
+	padding: 0 1%;
+	display: none;
+	transition-duration: 16s;
+	transition-delay: .005s;
+}
+
+.searchOptionTitle {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	margin-bottom: 5px;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.searchOptionName {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.ingredientsToggle {
+	position: absolute;
+	right: 50%;
+	top: 30px;
+	margin-right: -30px;
+	transition-duration: .18s;
+	transition-delay: .05s;
+	opacity: 0;
+	display: none;
+}
+
+.searchOptions1 {
+	height: 0;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	transition-duration: .18s;
+	opacity: 0;
+}
+
+.searchOptions2 {
+	height: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+	transition-duration: .18s;
+	opacity: 0;
+}
+
+.ingredientsNumber {
+	width: 39px;
+	font-family: "Courgette", cursive;
+	font-size: 1.03em;
+}
+
+input, select, option {
+	height: 20px;
+	font-family: "Courgette", cursive;
+	font-size: 1.03em;
+}
+
+select {
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0 0 3px 1px rgba(255, 255, 255, .3);
+	border-width: 0;
+}
+
+select:focus {
+	outline: none;
+}
+
+.preparationTimeInput {
+	width: 28px;
+	margin-top: 5px;
+	text-align: center;
+	background-color: black;
+	box-shadow: 0 0 3px 1px rgba(255, 255, 255, .3);
+	border-width: 0;
+}
+
+.preparationTimeInput:focus {
+	outline: none;
+}
+
+.dificulty {
+	width: 56px;
+}
+
+.searchButton {
+	position: absolute;
+	right: 0px;
+	top: 1px;
+	width: 21px;
+	height: 21px;
+	padding: 0;
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px 16px;
+	background-color: rgba(0, 0, 0, 0);
+	transition-duration: .18s;
+	border-width: 0px;
+	opacity: 0;
+}
+
+.browseContainer {
+	position: absolute;
+	right: 2%;
+	width: 56px;
+	height: 23px;
+	text-align: center;
+	margin: auto 0;
+	z-index: 3;
+}
+
+.browse {
+	top: 0;
+	right: 0;
+	height: 23px;
+	width: 56px;
+	margin: auto 0;
+	padding-top: 1px;
+	text-align: center;
+	transition-duration: .18s;
+	z-index: 2;
+}
+
+.browseExit {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.browseTopCover {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	height: 3px;
+	transition-duration: .18s;
+	z-index: 3;
+}
+
+.browseInternal {
+	padding: 5px 0;
+	width: 0;
+	height: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .9);
+	transition-duration: .18s;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.browseInternalItems {
+	width: 30%;
+	height: 0;
+	min-width: 110px;
+	font-size: 1.2em;
+	margin-top: 7px;
+	background-color: rgba(0, 0, 0, .32);
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, .2);
+	transition-duration: .18s;
+}
+
+.browseInternalItems:hover {
+	text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+
+.microwave {
+	margin-bottom: 8px;
+}
+
+main {
+	position: relative;
+	height: 86%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto;
+	overflow-x: hidden;
+}
+
+.mainSections {
+	display: flex;
+	margin: auto;
+	font-size: 1.2em;
+	padding: 6px 9px;
+	background-color: rgba(0, 0, 0, .68);
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, .2);
+	transition-duration: .18s;
+}
+
+.halfSection {
+	width: 84%;
+	text-align: justify;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.wholeSection {
+	width: 90%;
+	grid-column: 1 / span 2;
+}
+
+.previewSection {
+	height: 75%;
+	padding: 0;
+	justify-self: center;
+}
+
+.previewImage {
+	width: 76%;
+	height: 76%;
+	position: absolute;
+	transition-duration: .35s;
+}
+
+.previewRecipesName {
+	position: absolute;
+	top: 50%;
+	margin-top: -34px;
+	padding: 3px 5px 8px 5px;
+	width: 106%;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: normal;
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, .2);
+	transition-duration: .35s;
+	z-index: 0;
+}
+
+.siteInfo {
+	text-align: justify;
+}
+											/* FOOD TYPE SECTIONS */
+.foodTypeSections {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 100%;
+	background-color: rgba(0, 0, 0, .3);
+	transition-duration: .18s;
+	transition-timing-function: ease-out;
+	overflow-y: auto;
+	z-index: 1;
+}
+
+.meatSection {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.foodTypeSectionsInternal {
+	position: relative;
+	width: 66%;
+	height: 43%;
+	max-width: 90px;
+	margin: 20px 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, .3);
+	transform: skewX(-10deg);
+	background-color: rgba(0, 0, 0, .7);
+	transition-duration: .1s;
+}
+
+.foodTypeSectionsInternal:hover {
+	box-shadow: 0 0 4px 2px rgba(255, 255, 255, .3);
+}
+
+.foodSectionCover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .16);
+}
+
+.foodSectionCover:active {
+	background-color: rgba(0, 0, 0, .25);
+}
+
+.foodSectionTitle {
+	padding: 0 4px;
+	transform: skewX(10deg);
+	font-size: 1.55em;
+	text-shadow: 0 0 9px black;
+	user-select: none;
+}
+
+.foodSectionClickArea {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pork {
+	background-image: url(../img/pork.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -35px 0;
+}
+
+.beef {
+	background-image: url(../img/beef.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -35px 0;
+}
+
+.lamb {
+	background-image: url(../img/mutton.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -38px 0;
+}
+
+.poultry {
+	background-image: url(../img/chicken.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -35px 0;
+}
+
+.fish {
+	background-image: url(../img/fish2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -22px 0;
+}
+
+.game {
+	background-image: url(../img/game.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -22px 0;
+}
+
+/*.titlePork, .titleBeef {
+	margin-left: -27px;
+	margin-top: -14px;
+}
+
+.titleLamb {
+	margin-left: -39px;
+	margin-top: -27px;
+}
+
+.titlePoultry {
+	margin-left: -39px;
+	margin-top: -14px;
+}
+
+.titleFish {
+	margin-left: -25px;
+	margin-top: -14px;
+}
+
+.titleGame {
+	margin-left: -30px;
+	margin-top: -14px;
+}*/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3%;
+	min-height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .78);
+	box-shadow: 0 -1px 3px 0px rgba(255, 255, 255, .4);
+	transition-duration: .2s;
+	z-index: 1;
+}
+
+footer:hover {
+	height: 6%;
+}
+
+@media screen and (max-width: 375px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow-y: scroll;
+	}
+
+	#searchField {
+		font-size: .9em;
+	}
+
+	.halfSection {
+		margin-top: 25px;
+	}
+
+	.wholeSection {
+		margin-top: 25px;
+	}
+}
